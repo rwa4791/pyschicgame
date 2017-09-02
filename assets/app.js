@@ -48,13 +48,13 @@ document.onkeyup = function(event) {
             if (userGuess == letterToGuess){
                 wins++;
                 document.querySelector('#wins').innerHTML = "Wins: " + wins;
-                alert("Are you David Blane?");
+                alert("Good job!");
                 reset();
             }
         }else if(guessesLeft == 0){
-            losses++;
+\            losses++;
             document.querySelector('#losses').innerHTML = "Losses: " + losses;
-            alert("Womp, Womp, you did not guess correctly. Try again");
+            alert("Sorry, you did not get it right");
             reset();
         }
 };
